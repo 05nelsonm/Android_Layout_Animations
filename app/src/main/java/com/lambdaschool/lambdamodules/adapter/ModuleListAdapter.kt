@@ -13,7 +13,7 @@ import com.lambdaschool.lambdamodules.R
 import com.lambdaschool.lambdamodules.activity.ModuleDetailsActivity
 import com.lambdaschool.lambdamodules.activity.MainActivity.Companion.MODULE_DETAILS_REQUEST_KEY
 import com.lambdaschool.lambdamodules.model.ModuleItem
-import kotlinx.android.synthetic.main.module_item_layout.view.*
+import kotlinx.android.synthetic.main.activity_item_layout.view.*
 
 class ModuleListAdapter(private val data: Array<ModuleItem>) :
     RecyclerView.Adapter<ModuleListAdapter.ViewHolder>() {
@@ -28,7 +28,7 @@ class ModuleListAdapter(private val data: Array<ModuleItem>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val viewGroup = LayoutInflater.from(parent.context).inflate(R.layout.module_item_layout, parent, false)
+        val viewGroup = LayoutInflater.from(parent.context).inflate(R.layout.activity_item_layout, parent, false)
         context = parent.context
         return ViewHolder(viewGroup)
     }

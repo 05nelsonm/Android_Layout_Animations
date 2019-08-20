@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.lambdaschool.lambdamodules.adapter.ModuleListAdapter
 import com.lambdaschool.lambdamodules.R
-import com.lambdaschool.lambdamodules.`object`.AllOfTheDatas
+import com.lambdaschool.lambdamodules.util.AllOfTheDatas
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
