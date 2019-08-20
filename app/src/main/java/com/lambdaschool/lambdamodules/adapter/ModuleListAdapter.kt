@@ -6,6 +6,8 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -25,6 +27,11 @@ class ModuleListAdapter(private val data: Array<ModuleItem>) :
         val lectureId: TextView = view.tv_main_card_lecture_id
         val description: TextView = view.tv_main_card_description
         val cardView: CardView = view.cardView
+    }
+
+    fun setEnterAnimation(animationView: View, position: Int) {
+        val animation: Animation = AnimationUtils.loadAnimation(animationView.context, R.anim.my_slide_in_left)
+        animationView.startAnimation(animation)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -47,5 +54,7 @@ class ModuleListAdapter(private val data: Array<ModuleItem>) :
             intent.putExtra(MODULE_DETAILS_REQUEST_KEY, data[position])
             (context as Activity).startActivity(intent)
         }
+        setEnterAnimation(holder.cardView, position)
     }
+
 }
