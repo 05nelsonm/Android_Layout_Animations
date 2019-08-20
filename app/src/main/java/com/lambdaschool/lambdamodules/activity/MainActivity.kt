@@ -1,7 +1,8 @@
-package com.lambdaschool.lambdamodules
+package com.lambdaschool.lambdamodules.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.lambdaschool.lambdamodules.R
 
 class MainActivity : AppCompatActivity() {
 
