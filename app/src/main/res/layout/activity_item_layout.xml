@@ -23,6 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:transitionName="shared_title"
                 android:text="Git"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="32sp"

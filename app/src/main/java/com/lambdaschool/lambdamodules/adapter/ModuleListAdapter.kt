@@ -56,7 +56,7 @@ class ModuleListAdapter(private val data: Array<ModuleItem>) :
             intent.putExtra(MODULE_DETAILS_REQUEST_KEY, data[position])
             //(context as Activity).startActivity(intent)
 
-            val optionsBundle: Bundle = ActivityOptions.makeSceneTransitionAnimation(context as Activity).toBundle()
+            val optionsBundle: Bundle = ActivityOptions.makeSceneTransitionAnimation(context as Activity, holder.title, "shared_title").toBundle()
 
             context.startActivity(intent, optionsBundle)
         }
