@@ -4,6 +4,10 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.transition.Explode
+import android.transition.Fade
+import android.transition.Slide
+import android.view.Window
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +24,10 @@ class ModuleDetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
+        window.enterTransition = Slide()
+        window.exitTransition = Fade()
         setContentView(R.layout.activity_module_details)
 
         // Pull in passed info from MainActivity
