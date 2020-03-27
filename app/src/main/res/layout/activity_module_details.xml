@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/secondaryLightColor"
+        android:orientation="vertical"
+        tools:context=".activity.ModuleDetailsActivity">
+
+    <TextView
+            android:id="@+id/tv_module_title"
+            android:transitionName="shared_title"
+            android:layout_marginTop="8dp"
+            android:text="Module Title"
+            android:gravity="center"
+            android:textSize="36sp"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:text="Description:"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_module_description"
+            android:text="Description description description"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/ll_module_details"
+            android:orientation="vertical"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btn_github"
+                android:text="GitHub Repo Links"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:backgroundTint="@color/primaryDarkColor"
+                android:textColor="@color/primaryTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"/>
+
+        <Button
+                android:id="@+id/btn_demo"
+                android:text="@string/module_demo"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:backgroundTint="@color/primaryDarkColor"
+                android:textColor="@color/primaryTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"/>
+
+        <Button
+                android:id="@+id/btn_demo_two"
+                android:text="@string/module_demo_two"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:backgroundTint="@color/primaryDarkColor"
+                android:textColor="@color/primaryTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"/>
+
+        <Button
+                android:id="@+id/btn_project"
+                android:text="@string/guided_project"
+                android:textSize="24sp"
+                android:backgroundTint="@color/primaryDarkColor"
+                android:textColor="@color/primaryTextColor"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

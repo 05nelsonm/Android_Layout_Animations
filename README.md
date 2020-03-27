@@ -14,7 +14,7 @@ This is another shorter project, for this one, you'll take an existing List-Deta
 
 ## Test
 
-1. Make sure the elements animate as expected
+1. Make sure the elements animate as expected.
 
 ## Go Further
 
